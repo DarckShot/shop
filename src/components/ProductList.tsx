@@ -21,7 +21,7 @@ const ProductList: React.FC = () => {
       if (products.length > 0) {
         setLoading(false);
       }
-    }, 2000); // Задержка в 2 секунды
+    }, 500);
 
     return () => clearTimeout(timer);
   }, [products]);
