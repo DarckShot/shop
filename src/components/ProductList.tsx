@@ -15,10 +15,15 @@ const ProductList: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [loading, setLoading] = useState(true);
 
+  // Имитация задержки загрузки данных (чтобы можно было увидеть процесс загрузки)
   React.useEffect(() => {
-    if (products.length > 0) {
-      setLoading(false);
-    }
+    const timer = setTimeout(() => {
+      if (products.length > 0) {
+        setLoading(false);
+      }
+    }, 2000); // Задержка в 2 секунды
+
+    return () => clearTimeout(timer);
   }, [products]);
 
   const filteredProducts = products.filter((product) =>
