@@ -12,7 +12,7 @@
 ## Структура проекта
    Проект организован следующим образом:
 
-    ```
+```
     src/
     ├── components/
     │   ├── ProductCard.tsx
@@ -28,7 +28,8 @@
     │   ├── ProductDetails.tsx
     │   └── ProductListPage.tsx
     ├── App.tsx
-    └── index.tsx```
+    └── index.tsx
+```
 
 ## Описание компонентов
 
